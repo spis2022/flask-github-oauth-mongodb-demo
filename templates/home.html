@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <h1>Example App With Logins</h1>
+
+  {% if session.user %}
+   <p>Logged in as: {{session.user.login}} <a href="/logout">Logout</a></p>
+  {% else %}
+    <p>Please login!</p>
+  {% endif %}
+
+
+{% endblock %}

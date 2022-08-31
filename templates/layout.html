@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>{% block title %}{% endblock %}</title>
+
+  {{ bootstrap.load_css() }}
+</head>
+
+<body>
+    
+  <div>
+    <div id="content" class="container">
+      {% include "navbar.html" %}
+      {% include "flash_messages.html" %}
+      {% block content %}{% endblock %}
+    </div>
+  
+    <div id="footer" class="container">
+      <table>
+        {% for key in session.keys() %}
+          <tr><td>session.{{key}}=</td><td>{{session[key]}}</td></tr>  
+        {% endfor %}   
+      </table>
+    </div>
+  
+  </div>
+  {{ bootstrap.load_js() }}
+</body>
+
+</html>
