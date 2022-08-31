@@ -222,6 +222,18 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "github-flask"
+version = "3.2.0"
+description = "GitHub extension for Flask microframework"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Flask = "*"
+requests = "*"
+
+[[package]]
 name = "httplib2"
 version = "0.20.4"
 description = "A comprehensive HTTP client library."
@@ -627,7 +639,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "5caae3670dcb9dd816e319e4a271ddcd2bf0d6fbd6dff1253d45fffe580661a5"
+content-hash = "5af842c91da0b71bdb327c5b5c4dc37db671cbcf1c533c88f4647f6284856cec"
 
 [metadata.files]
 aiohttp = []
@@ -649,6 +661,7 @@ flask-github = []
 flask-session = []
 flask-wtf = []
 frozenlist = []
+github-flask = []
 httplib2 = []
 idna = []
 importlib-metadata = []

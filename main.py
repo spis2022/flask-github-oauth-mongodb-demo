@@ -19,11 +19,11 @@
 # python3 -m poetry add PyMongo
 # python3 -m poetry add dnspython
 # python3 -m poetry add Flask-Session
+# python3 -m poetry add GitHub-Flask
 
 
 # For Bootstrap Flask (https://bootstrap-flask.readthedocs.io/en/stable/basic/)
 # In Shell: python -m poetry add bootstrap-flask
-
 
 from flask_bootstrap import Bootstrap5
 
