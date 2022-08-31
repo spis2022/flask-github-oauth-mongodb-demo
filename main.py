@@ -14,6 +14,11 @@
 #  https://github.com/spis2022/spis2022.github.io/blob/main/webapps/oauth_setup.md
 #
 
+# Dependencies: In shell:
+# python3 -m poetry add bootstrap-flask
+# python3 -m poetry add PyMongo
+# python3 -m poetry add dnspython
+# python3 -m poetry add Flask-Session
 
 
 # For Bootstrap Flask (https://bootstrap-flask.readthedocs.io/en/stable/basic/)
