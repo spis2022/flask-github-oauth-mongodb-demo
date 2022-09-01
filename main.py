@@ -108,12 +108,16 @@ def render_interests():
                            interests=interests,
                            form=InterestForm())
 
+@app.route('/interests/add',methods=['POST'])
+def respond_to_interests_add():
+    name = request.form['name']
+    flash(f"added {name} to interests", "success")
+    db.interests.insert_one({"name": name})
+    return redirect(url_for('render_interests'))
+
 @app.route('/link2')
 def render_link2():
     return render_template('link2.html')
-
-
-
 
 @github.access_token_getter
 def token_getter():

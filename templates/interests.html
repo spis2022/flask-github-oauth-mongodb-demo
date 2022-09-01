@@ -25,7 +25,7 @@
    <h2>Add a new interest</h2>
    <p>This allows every user to select whether they share this interest or not</p>
 
-   <form method="POST" action="/interest/add">
+   <form method="POST" action="/interests/add">
     {{ form.csrf_token }}
     {{ form.name.label }} {{ form.name(size=30) }}
     <input type="submit" value="Add Interest">
